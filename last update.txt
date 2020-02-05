@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>html - débutant </title>
+
+    <link rel="stylesheet" href="css/html_debutant.css">
+
+     <style>
+
+            .button {
+                 
+                 margin-left: 40%;
+
+                -webkit-transition-duration: 0.4s; /* Safari */
+
+                transition-duration: 0.4s;
+
+                background-color: #008CBA ;
+
+                border: none;
+               
+                color: white;
+               
+                padding: 15px 32px;
+               
+                text-align: center;
+               
+                text-decoration: none;
+               
+                display: inline-block;
+               
+                font-size: 16px;
+               
+                margin: 4px 2px;
+               
+                cursor: pointer;
+
+             }
+
+            .button:hover {
+
+                 background-color: #4CAF50; /* Green */
+   
+                 color: white;
+
+            }
+
+     </style>
+
+</head>
+
+<body>
+
+     <header>
+          
+            <div class="navbar">      
+
+                   
+
+                    <ul>
+
+                       <li style="float: left ; color: white ; margin-top: 3px ;font-size: 30px">
+                           
+                        <strong style="color: palegreen">E</strong>-<span style="color: red">school</span> 
+                    
+                        </li>
+
+                         
+                       <li> <a href="/index.html">welcome</a> </li>
+                        
+                      
+
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content">
+
+        <!-- Liste des cours -->
+
+           <nav>
+       
+              <ul>
+    
+                        <li><a href="../html/debutant.html" class="active">html</a></li>
+    
+                        <li><a href="../css/debutant.html" >css</a></li>
+            
+                        <li><a href="../php/debutant.html">PHP</a></li>
+            
+                        <li><a href="../javascript/debutant.html">javascript</a></li>
+        
+              </ul>
+          
+          
+           </nav>
+
+                  
+     
+          <div style="margin-left: 20%;padding: 2%;  max-width: 100%;display: none" id="ShowScore" >
+
+                 
+
+          </div>
+
+             
+
+      
+           <section  id="ShowQuizz">
+
+             
+               
+
+                <article>
+
+         <!-- **** Afficher le résultat avec une Remarque et Afficher les Réponses justes  ******** -->
+
+              
+
+              
+
+                      
+              <!--************************ Introduction ************************ -->
+
+                        <h2 style="color: red">Quizz<strong> * Html 5 *</strong>  pour débutant</h2>
+                        
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Compétences évaluées</h2><hr>
+                        
+                        <ul>
+                                       <li>Utiliser les balises HTML les plus adaptées</li> <br>
+                                 
+                                       <li> Comprendre le rôle du code HTML</li>
+                        </ul>
+
+                        
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Description</h2><hr>
+                             
+                          <p>Maintenant, il est temps d'évaluer vos connaissances sur cette première partie !
+                                        Bon courage !</p>
+                         
+
+                        <hr>
+
+                       
+
+           <!--************************ Debut quizz ************************ -->
+
+          <form action="" name="quiz" >
+
+                      
+                        <!-- question 1 -->
+
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 1</h2><hr>
+                             
+                         <h3> Quel est le rôle du navigateur web ?</h3>
+
+
+                                 <input type="radio" name="réponse1" value="1" > <span id="1"> Ecrire du code en HTML et CSS </span> <br> <br>
+
+                                 <input type="radio" name="réponse1" value="2" ><span id="2"> Traduire le code HTML et CSS en un résultat visuel </span> <br> <br>
+
+                                 <input type="radio" name="réponse1" value="3" > <span id="3"> Se connecter au réseau Wifi </span> <br> <br>
+
+                                 <input type="radio" name="réponse1" value="4" ><span id="4"> Fournir votre site web à vos visiteurs  </span>        
+
+                      <hr>
+
+                      <!-- question 2 -->
+
+                      <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 2</h2><hr>
+                             
+                      <h3> Lequel de ces éléments rencontre-t-on en premier dans un code HTML ?</h3>
+
+                     
+
+                              <input type="radio" name="réponse2" value="5"><span id="5">  &lt;html&gt; </span><br> <br>
+
+                              <input type="radio" name="réponse2" value="6"><span id="6">  &lt;head&gt; </span><br> <br>
+
+                              <input type="radio" name="réponse2" value="7"><span id="7"> &lt;!-- BEGIN --&gt; </span><br> <br>
+
+                              <input type="radio" name="réponse2" value="8" ><span id="8"> &lt;!DOCTYPE html&gt;</span>
+
+                        
+                                      
+
+                        <hr>
+                     
+
+                      <!-- question 3 -->
+
+                      <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 3</h2><hr>
+                                
+                      <h3> Avec lequel de ces langages peut-on définir le fond du menu de navigation d'un site en gris ?</h3>
+   
+                        
+   
+                              <input type="radio" name="réponse3" value="9"><span id="9"></span>  HTML  <br> <br>
+   
+                              <input type="radio" name="réponse3" value="10"><span id="10"></span>CSS <br> <br>
+   
+                              <input type="radio" name="réponse3" value="11"><span id="11"></span>  JavaScript <br> <br>
+   
+                              <input type="radio" name="réponse3" value="12"><span id="12"></span> PHP <br> <br>
+
+                   
+                     <hr>
+  
+
+                     <!-- question 4 -->
+     
+                     <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 4</h2><hr>
+                                  
+                     <h3> Le contenu de l'une de ces balises correspond au titre principal de votre page. Il est très important pour les moteurs de recherche. Lequel ?
+
+                        </h3>
+     
+                       
+     
+                             <input type="radio" name="réponse4" value="13"><span id="13"></span>   &lt; title &gt;    <br> <br>
+     
+                             <input type="radio" name="réponse4" value="14"><span id="14"></span>  &lt;meta &gt;  <br> <br>
+     
+                             <input type="radio" name="réponse4" value="15"><span id="15"></span>  &lt; h1 &gt;  <br> <br>
+     
+                             <input type="radio" name="réponse4" value="16"><span id="16"></span> &lt; h2 &gt; 
+     
+                      
+                                     
+
+                      <hr>
+
+                       <!-- question 5 -->
+          
+                       <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 5</h2><hr>
+                                       
+                       <h3> L'un de ces formats d'image est particulièrement adapté au stockage des photos. Lequel ?</h3>
+          
+                        
+          
+                               <input type="radio" name="réponse5" value="17"><span id="17"></span> PNG  <br> <br>
+          
+                               <input type="radio" name="réponse5" value="18"><span id="18"></span>JPEG <br> <br>
+          
+                               <input type="radio" name="réponse5" value="19"><span id="19"></span> GIF <br> <br>
+          
+                               <input type="radio" name="réponse5" value="20"><span id="20"></span> BMP
+          
+                        
+                             
+
+                       <hr>
+
+                      <!-- question 6 -->
+            
+                      <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 6</h2><hr>
+                                         
+                      <h3> Quel est le rôle du navigateur web ?</h3>
+            
+                         
+            
+                              <input type="radio" name="réponse6" value="21"><span id="21"></span>  Ecrire du code en HTML et CSS  <br> <br>
+            
+                              <input type="radio" name="réponse6" value="22"><span id="22"></span> Traduire le code HTML et CSS en un résultat visuel <br> <br>
+            
+                              <input type="radio" name="réponse6" value="23"><span id="23"></span>  Se connecter au réseau Wifi <br> <br>
+            
+                              <input type="radio" name="réponse6" value="24"><span id="24"></span> Fournir votre site web à vos visiteurs
+            
+                       
+                                      
+
+                      <hr>
+
+                  <!-- question 7 -->
+                  
+                  <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 7</h2><hr>
+                                        
+                  <h3> Quel est le rôle du navigateur web ?</h3>
+                  
+                     
+                  
+                          <input type="radio" name="réponse7" value="25"><span id="25">  Ecrire du code en HTML et CSS </span> <br> <br>
+                  
+                          <input type="radio" name="réponse7" value="26"><span id="26"> Traduire le code HTML et CSS en un résultat visuel </span><br> <br>
+                  
+                          <input type="radio" name="réponse7" value="27">  <span id="27">Se connecter au réseau Wifi <br> <br></span>
+                  
+                          <input type="radio" name="réponse7" value="28"> <span id="28">Fournir votre site web à vos visiteurs</span>
+                  
+                   
+                       
+
+                  <hr>
+
+                
+        </form>
+
+        
+                <!--************************ Fin quizz ************************ -->
+                  
+                                 
+                <a href="#ShowScore"> <button type="button" class="button" onclick="test()"> Valider  </button></a>
+   
+     
+
+                            <br></br>
+
+                            <h2 style="color: red"> <strong> * * * * * * * * * * * * * * * * * * FIN * * * * * * * * * * * * * * * * * * </strong>  </h2>
+                         
+                        
+                            <br></br> <br></br> <br></br>
+                        
+                    </article>
+
+                 <aside>
+
+                        <ul>
+                         
+                                <li> <a href="debutant.html" class="active">Niveau Débutant</a> </li>
+                                 
+                                <li> <a href="moyen.html"> Niveau Moyen </a> </li>
+         
+                                <li> <a href="avance.html"> Niveau Avancé </a> </li>                        
+         
+                        </ul>
+
+                 </aside>
+                
+         </section>
+
+
+    </div>
+          
+</body>
+
+
+ <script src="js/debutant.js"></script>
+
+
+</html>

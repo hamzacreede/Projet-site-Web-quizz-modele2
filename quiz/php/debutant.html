@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>PHP - Débutant </title>
+
+    <link rel="stylesheet" href="css/html_debutant.css">
+
+     <style>
+
+            .button {
+                 
+                 margin-left: 40%;
+
+                -webkit-transition-duration: 0.4s; /* Safari */
+
+                transition-duration: 0.4s;
+
+                background-color: #008CBA ;
+
+                border: none;
+               
+                color: white;
+               
+                padding: 15px 32px;
+               
+                text-align: center;
+               
+                text-decoration: none;
+               
+                display: inline-block;
+               
+                font-size: 16px;
+               
+                margin: 4px 2px;
+               
+                cursor: pointer;
+
+             }
+
+            .button:hover {
+
+                 background-color: #4CAF50; /* Green */
+   
+                 color: white;
+
+            }
+
+     </style>
+
+</head>
+
+<body onload="last()">
+
+     <header>
+          
+            <div class="navbar">      
+
+                   
+
+                    <ul>
+
+                       <li style="float: left ; color: white ; margin-top: 3px ;font-size: 30px">
+                           
+                        <strong style="color: palegreen">E</strong>-<span style="color: red">school</span> 
+                    
+                        </li>
+
+                         
+                       <li> <a href="/index.html">welcome</a> </li>
+                        
+                      
+
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content">
+
+        <!-- Liste des cours -->
+
+           <nav>
+       
+              <ul>
+    
+                        <li><a href="../html/debutant.html" >html</a></li>
+    
+                        <li><a href="../css/debutant.html" >css</a></li>
+            
+                        <li><a href="../php/debutant.html" class="active">PHP</a></li>
+            
+                        <li><a href="../javascript/debutant.html">javascript</a></li>
+        
+              </ul>
+          
+          
+           </nav>
+
+               <div style="margin-left: 20%;padding: 2%;  max-width: 100%;display: none" id="ShowScore" >
+
+                 
+
+                </div>
+      
+      
+           <section id="ShowQuizz">
+
+                <article >
+
+         <!-- **** Afficher le résultat avec une Remarque et Afficher les Réponses justes  ******** -->
+
+              <div id="SetTrueResponse"></div>
+
+              <h3 id="ShowScore" style="padding: 2%; max-width: 70%;"></h3>
+
+            
+
+                      
+              <!--************************ Introduction ************************ -->
+
+                        <h2 style="color: red">Quizz<strong> * PHP *</strong>  pour débutant</h2>
+                        
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Compétences évaluées</h2><hr>
+                        
+                        <ul>
+                                       <li>Utiliser les scripts PHP les plus adaptées</li> <br>
+                                 
+                                       <li> Comprendre le rôle du code PHP</li>
+                        </ul>
+
+                        
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Description</h2><hr>
+                             
+                          <p>Maintenant, il est temps d'évaluer vos connaissances sur PHP !
+                                        Bon courage !</p>
+                         
+
+                        <hr>
+
+                       
+
+           <!--************************ Debut quizz ************************ -->
+
+          <form action="" name="quiz" >
+
+                      
+                        <!-- question 1 -->
+
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 1</h2><hr>
+                             
+                         <h3> Que signifie PHP ?</h3>
+
+
+                                 <input type="radio" name="réponse1" value="1" >  Page Helper Process  <br> <br>
+
+                                 <input type="radio" name="réponse1" value="2" >  Programming Home Pages <br> <br>
+
+                                 <input type="radio" name="réponse1" value="3" >  PHP: Hypertext Preprocessor <br> <br>
+
+                      <hr>
+
+                      <!-- question 2 -->
+
+                      <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 2</h2><hr>
+                             
+                      <h3>Quelle fonction retourne la longueur d'une chaîne de texte ?</h3>
+             
+                              <input type="radio" name="réponse2" value="1"> strlen <br> <br>
+
+                              <input type="radio" name="réponse2" value="2"> strlength <br> <br>
+
+                              <input type="radio" name="réponse2" value="3"> length <br> <br>
+
+                              <input type="radio" name="réponse2" value="4" >substr
+
+                
+                        <hr>
+                     
+
+                      <!-- question 3 -->
+
+                      <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 3</h2><hr>
+                                
+                      <h3>Comment accède-t-on au 1er élément chaton dans le tableau suivant : $tableau = Array('chaton' , 'ornithorynque', 'dauphin'); ?</h3>
+   
+                        
+   
+                              <input type="radio" name="réponse3" value="1">   $tableau[1]  <br> <br>
+   
+                              <input type="radio" name="réponse3" value="2">$tableau[0] <br> <br>
+   
+                              <input type="radio" name="réponse3" value="3">  $tableau{0} <br> <br>
+   
+                              <input type="radio" name="réponse3" value="4"> $tableau.get(1) <br> <br>
+
+                   
+                     <hr>
+  
+
+                     <!-- question 4 -->
+     
+                     <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 4</h2><hr>
+                                  
+                     <h3>Comment vérifie-t-on l'égalité de deux variables : $a et $b ?</h3>
+     
+                             <input type="radio" name="réponse4" value="1"> $a = $b     <br> <br>
+     
+                             <input type="radio" name="réponse4" value="2"> $a == $b  <br> <br>
+     
+                             <input type="radio" name="réponse4" value="3"> $a != $b   <br> <br>
+     
+                             <input type="radio" name="réponse4" value="4"> if($a,$b)                                                                
+
+                      <hr>
+
+                       <!-- question 5 -->
+          
+                       <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 5</h2><hr>
+                                       
+                       <h3> Quelle est l'utilité de l'opérateur ||  </h3>
+                            
+                               <input type="radio" name="réponse5" value="1">  Il sert à vérifier que toutes les conditions sont réalisées.  <br> <br>
+          
+                               <input type="radio" name="réponse5" value="2">Il sert à vérifier qu'une, et une seule, des conditions est réalisée. <br> <br>
+          
+                               <input type="radio" name="réponse5" value="3">  Il sert à vérifier qu'une, au moins, des conditions est réalisée. <br> <br>
+
+                                                        
+                       <hr>
+
+
+                  <a href="#ShowScore"> <button type="button" class="button" onclick="check()"> Valider  </button></a>
+   
+                
+        </form>
+
+        
+                <!--************************ Fin quizz ************************ -->
+                  
+                                 
+               
+     
+
+                            <br></br>
+
+                            <h2 style="color: red"> <strong> * * * * * * * * * * * * * * * * * * FIN * * * * * * * * * * * * * * * * * * </strong>  </h2>
+                         
+                        
+                            <br></br> <br></br> <br></br>
+                        
+                    </article>
+
+                 <aside>
+
+                        <ul>
+                         
+                                <li> <a href="debutant.html" class="active">Niveau Débutant</a> </li>
+                                          
+                                <li> <a href="#" onclick="checkLevel()" id="checkLevel"> Niveau Avancé </a> </li>                        
+         
+                        </ul>
+
+                 </aside>
+                
+         </section>
+
+
+    </div>
+          
+</body>
+
+
+ <script src="js/debutant.js"></script>
+
+
+</html>

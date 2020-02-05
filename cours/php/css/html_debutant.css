@@ -1,0 +1,148 @@
+/*  *** navbar **  */
+
+header .navbar {
+
+    margin-top: -8px ;
+
+    margin-left: -8px;
+
+    margin-right: -8px;
+  
+ }
+  
+   header .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      height: 50px; 
+      background-color: #333; 
+  }
+  
+  header .navbar li {
+      float: right;
+      padding:5px ; 
+  }
+  
+  header .navbar li a {
+      
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family:  Georgia, 'Times New Roman', Times, serif,'Lucida Sans Regular' ;              
+      font-size: 25px;
+      
+  
+  }
+  
+  header .navbar li a:hover {
+      background-color: #111;
+  }
+
+  /* END navbar */
+
+
+  /**** begin content ****** */ 
+
+
+   .content{
+
+            display: flex ;
+            margin-top: 5% ;
+        }
+
+        nav ul {
+
+               list-style-type: none;
+               
+               background-color: #f1f1f1;
+
+              /* position: fixed; */
+
+              height: 100%;
+
+              width: 200px;
+
+              padding: 0 ;
+
+
+           }
+
+        nav li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+       nav li a.active {
+           background-color: #4CAF50;
+           color: white;
+       }
+       
+       nav li a:hover:not(.active) {
+           background-color: #555;
+           color: white;
+       }
+        
+
+
+       /* article et aside */
+        
+         section {
+
+             margin-left:5%;
+                       
+             height:1000px;     
+             
+             display: flex 
+
+         }
+
+         /* article */
+
+         section article{
+             
+             max-width: 80% ;
+         } 
+
+
+         /* aside */
+         
+         section aside ul{
+
+              list-style-type: none;
+
+              background-color: #f1f1f1;
+      
+              overflow: auto;
+
+              width: 200px;
+
+              padding: 0 ;
+
+
+         }
+
+          section li a {
+
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+
+           }
+
+           section li a.active {
+               background-color: rgb(175, 76, 76);
+               color: white;
+           }
+       
+           section li a:hover:not(.active) {
+               background-color: #555;
+               color: white;
+           }
+   
+      

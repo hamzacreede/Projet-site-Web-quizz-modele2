@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>PHP - Avancé </title>
+
+    <link rel="stylesheet" href="css/html_debutant.css">
+
+     <style>
+
+            .button {
+                 
+                 margin-left: 40%;
+
+                -webkit-transition-duration: 0.4s; /* Safari */
+
+                transition-duration: 0.4s;
+
+                background-color: #008CBA ;
+
+                border: none;
+               
+                color: white;
+               
+                padding: 15px 32px;
+               
+                text-align: center;
+               
+                text-decoration: none;
+               
+                display: inline-block;
+               
+                font-size: 16px;
+               
+                margin: 4px 2px;
+               
+                cursor: pointer;
+
+             }
+
+            .button:hover {
+
+                 background-color: #4CAF50; /* Green */
+   
+                 color: white;
+
+            }
+
+     </style>
+
+</head>
+
+<body>
+
+     <header>
+          
+            <div class="navbar">      
+
+                   
+
+                    <ul>
+
+                       <li style="float: left ; color: white ; margin-top: 3px ;font-size: 30px">
+                           
+                        <strong style="color: palegreen">E</strong>-<span style="color: red">school</span> 
+                    
+                        </li>
+
+                         
+                       <li> <a href="/index.html">welcome</a> </li>
+                        
+                      
+
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content">
+
+        <!-- Liste des cours -->
+
+           <nav>
+       
+              <ul>
+    
+                        <li><a href="../html/debutant.html" >html</a></li>
+    
+                        <li><a href="../css/debutant.html" >css</a></li>
+            
+                        <li><a href="../php/debutant.html" class="active">PHP</a></li>
+            
+                        <li><a href="../javascript/debutant.html">javascript</a></li>
+        
+              </ul>
+          
+          
+           </nav>
+
+               <div style="margin-left: 20%;padding: 2%;  max-width: 100%;display: none" id="ShowScore" >
+
+                 
+
+                </div>
+      
+      
+           <section id="ShowQuizz">
+
+                <article >
+
+         <!-- **** Afficher le résultat avec une Remarque et Afficher les Réponses justes  ******** -->
+
+              <div id="SetTrueResponse"></div>
+
+              <h3 id="ShowScore" style="padding: 2%; max-width: 70%;"></h3>
+
+            
+
+                      
+              <!--************************ Introduction ************************ -->
+
+                        <h2 style="color: red">Quizz<strong> * PHP *</strong>  Niveau Avancé ! </h2>
+                        
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Compétences évaluées</h2><hr>
+                        
+                        <ul>
+                                       <li>Utiliser les scripts PHP les plus adaptées</li> <br>
+                                 
+                                       <li> Comprendre le rôle du code PHP</li>
+                        </ul>
+
+                        
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Description</h2><hr>
+                             
+                          <p>Maintenant, il est temps d'évaluer vos connaissances sur PHP Niveau Avancé !
+                                        Bon courage !</p>
+                         
+
+                        <hr>
+
+                       
+
+           <!--************************ Debut quizz ************************ -->
+
+          <form action="" name="quiz" >
+
+                      
+                        <!-- question 1 -->
+
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 1</h2><hr>
+                             
+                         <h3>Comment vérifier la syntaxe d'une adresse e-mail contenue dans la variable $email ?</h3>
+
+
+                                 <input type="radio" name="réponse1" value="1" > strpos($email,"*@*.*")
+                                   <br> <br>
+
+                                 <input type="radio" name="réponse1" value="2" >ereg($email,"[:alpha:]*@[:alpha:]*\.[:alpha:]*") <br> <br>
+
+                                 <input type="radio" name="réponse1" value="3" >preg_match("/^(\w|-)+@((\w|-)+\.)+[a-z]{2,6}$/i",$email) <br> <br>
+
+                      <hr>
+
+                      <!-- question 2 -->
+
+                      <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 2</h2><hr>
+                             
+                      <h3>Par défaut, dans quel ordre de priorité sont affectées les variables envoyées par HTTP ?</h3>
+
+                     
+
+                              <input type="radio" name="réponse2" value="1">  get, cookie, pos <a> <br> <br>
+
+                              <input type="radio" name="réponse2" value="2"> post, get, cookie <br> <br>
+
+                              <input type="radio" name="réponse2" value="3">get, post, cookie <br> <br>
+
+                              <input type="radio" name="réponse2" value="4" >post,cookie, get
+
+                        
+                                      
+
+                        <hr>
+                     
+
+                     <!-- question 3 -->
+     
+                     <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 3</h2><hr>
+                                  
+                     <h3>Comment définit-on le constructeur d'une classe (compatible PHP3/4/5) ?</h3>
+     
+                             <input type="radio" name="réponse3" value="1"> grâce à public static void()    <br> <br>
+     
+                             <input type="radio" name="réponse3" value="2">en utilisant __construct()  <br> <br>
+     
+                             <input type="radio" name="réponse3" value="3"> en nommant la fonction comme la classe  <br> <br>
+          
+                 
+                      <hr>
+
+                       <!-- question 4 -->
+          
+                       <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 4</h2><hr>
+                                       
+                       <h3> Comment mémorise-t-on de façon pratique une variable d'un script à l'autre sur un serveur web ?</h3>
+          
+                        
+                               <input type="radio" name="réponse4" value="1">   Grâce à serialize() <br> <br>
+          
+                               <input type="radio" name="réponse4" value="2"> En utilisant $_SESSION  <br> <br>
+          
+                               <input type="radio" name="réponse4" value="3"> Au moyen de register_globals()  <br> <br>                             
+
+                       <hr>
+
+                       <!-- question 5 -->
+          
+                       <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 5</h2><hr>
+                                       
+                       <h3>Quelle fonction de bufferisation (temporisation) envoie au navigateur les données contenues par le tampon, et stoppe la tamporisation de sortie ?</h3>
+          
+                               
+                               <input type="radio" name="réponse5" value="1">  ob_flush()  <br> <br>
+          
+                               <input type="radio" name="réponse5" value="2">  ob_end_flush()  <br> <br>
+          
+                               <input type="radio" name="réponse5" value="3"> ob_get_flush()<br> <br> 
+
+                       <hr>     
+
+              
+
+                  <a href="#ShowScore"> <button type="button" class="button" onclick="check()"> Valider  </button></a>
+   
+                
+        </form>
+
+        
+                <!--************************ Fin quizz ************************ -->
+                  
+                                 
+               
+     
+
+                            <br></br>
+
+                            <h2 style="color: red"> <strong> * * * * * * * * * * * * * * * * * * FIN * * * * * * * * * * * * * * * * * * </strong>  </h2>
+                         
+                        
+                            <br></br> <br></br> <br></br>
+                        
+                    </article>
+
+                 <aside>
+
+                        <ul>
+                         
+                                <li> <a href="debutant.html" >Niveau Débutant</a> </li>
+                                          
+                                <li> <a href="#" onclick="checkLevel()" id="checkLevel" class="active"> Niveau Avancé </a> </li>                        
+         
+                        </ul>
+
+                 </aside>
+                
+         </section>
+
+
+    </div>
+          
+</body>
+
+
+ <script src="js/avance.js"></script>
+
+
+</html>

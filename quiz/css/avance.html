@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <title>CSS - Avancé </title>
+
+    <link rel="stylesheet" href="css/html_debutant.css">
+
+     <style>
+
+            .button {
+                 
+                 margin-left: 40%;
+
+                -webkit-transition-duration: 0.4s; /* Safari */
+
+                transition-duration: 0.4s;
+
+                background-color: #008CBA ;
+
+                border: none;
+               
+                color: white;
+               
+                padding: 15px 32px;
+               
+                text-align: center;
+               
+                text-decoration: none;
+               
+                display: inline-block;
+               
+                font-size: 16px;
+               
+                margin: 4px 2px;
+               
+                cursor: pointer;
+
+             }
+
+            .button:hover {
+
+                 background-color: #4CAF50; /* Green */
+   
+                 color: white;
+
+            }
+
+     </style>
+
+</head>
+
+<body>
+
+     <header>
+          
+            <div class="navbar">      
+
+                   
+
+                    <ul>
+
+                       <li style="float: left ; color: white ; margin-top: 3px ;font-size: 30px">
+                           
+                        <strong style="color: palegreen">E</strong>-<span style="color: red">school</span> 
+                    
+                        </li>
+
+                         
+                       <li> <a href="/index.html">welcome</a> </li>
+                        
+                      
+
+                    </ul>
+
+              </div>
+
+     </header>
+
+     <div class="content">
+
+        <!-- Liste des cours -->
+
+           <nav>
+       
+              <ul>
+    
+                        <li><a href="../html/debutant.html" >html</a></li>
+    
+                        <li><a href="../css/debutant.html" class="active">css</a></li>
+            
+                        <li><a href="../php/debutant.html">PHP</a></li>
+            
+                        <li><a href="../javascript/debutant.html">javascript</a></li>
+        
+              </ul>
+          
+          
+           </nav>
+
+               <div style="margin-left: 20%;padding: 2%;  max-width: 100%;display: none" id="ShowScore" >
+
+                 
+
+                </div>
+      
+      
+           <section id="ShowQuizz">
+
+                <article >
+
+         <!-- **** Afficher le résultat avec une Remarque et Afficher les Réponses justes  ******** -->
+
+              <div id="SetTrueResponse"></div>
+
+              <h3 id="ShowScore" style="padding: 2%; max-width: 70%;"></h3>
+
+            
+
+                      
+              <h2 style="color: red">Quizz<strong> * CSS 3 *</strong>  pour les débutant</h2>
+                        
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Compétences évaluées</h2><hr>
+                        
+                        <ul>
+                                       <li>Utiliser les propriétés CSS les plus adaptées</li> <br>
+                                        
+                                 
+                                       <li> Comprendre le rôle du code CSS</li>
+                        </ul>
+
+                        
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Description</h2><hr>
+                             
+                          <p>Maintenant, il est temps d'évaluer vos connaissances sur CSS 3 !
+                                        Bon courage !</p>
+                         
+
+                        <hr>
+
+                       
+
+           <!--************************ Debut quizz ************************ -->
+
+          <form action="" name="quiz" >
+
+                      
+                        <!-- question 1 -->
+
+                        <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 1</h2><hr>
+                             
+                         <h3>Si je donne la valeur 1 à la propriété opacity sur un élément, que se passera-t-il ?</h3>
+
+                                 <input type="radio" name="réponse1" value="1" >L'élément disparaîtra complètement<br> <br>
+
+                                 <input type="radio" name="réponse1" value="2" >L'élément sera à moitié transparent <br> <br>
+
+                                 <input type="radio" name="réponse1" value="3" >L'élément sera très très légèrement transparent <br> <br>
+
+                                 <input type="radio" name="réponse1" value="4" >L'élément sera opaque     
+
+                      <hr>
+
+                      <!-- question 2 -->
+
+                      <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 2</h2><hr>
+                             
+                      <h3> Vrai ou faux ? On peut donner une image de fond à un paragraphe de texte. </h3>
+
+                     
+
+                              <input type="radio" name="réponse2" value="1"> Vrai <a> <br> <br>
+
+                              <input type="radio" name="réponse2" value="2"> Faux <br> <br>
+
+                                 
+
+                        <hr>
+                     
+
+                     <!-- question 3 -->
+     
+                     <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 3</h2><hr>
+                                  
+                     <h3>Laquelle de ces propriétés CSS permet d'ajouter une ombre à des lettres ?</h3>
+     
+                             <input type="radio" name="réponse3" value="1"> box-shadow    <br> <br>
+     
+                             <input type="radio" name="réponse3" value="2"> text-shadow  <br> <br>
+     
+                             <input type="radio" name="réponse3" value="3"> letter-shadow<br> <br>
+     
+                             <input type="radio" name="réponse3" value="4"> shadow 
+     
+                 
+                      <hr>
+
+                       <!-- question 4 -->
+          
+                       <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 4</h2><hr>
+                                       
+                       <h3> Laquelle de ces règles CSS permet de modifier l'apparence d'un lien déjà visité ?</h3>
+          
+                               
+                               <input type="radio" name="réponse4" value="1">  a:visited   <br> <br>
+          
+                               <input type="radio" name="réponse4" value="2"> a.consulted  <br> <br>
+          
+                               <input type="radio" name="réponse4" value="3"> a:focus  <br> <br>
+          
+                               <input type="radio" name="réponse4" value="4">a:consulted 
+
+                       <hr>
+
+                       <!-- question 5 -->
+          
+                       <h2 style="color: rgb(4, 0, 255) ; margin-top: 10%">Question 5</h2><hr>
+                                       
+                       <h3>Que se passe-t-il quand un élément est rendu flottant ?</h3>
+          
+                               
+                               <input type="radio" name="réponse5" value="1"> Il bouge sur la page   <br> <br>
+          
+                               <input type="radio" name="réponse5" value="2"> Il est positionné en haut à gauche de l'écran  <br> <br>
+          
+                               <input type="radio" name="réponse5" value="3"> Le texte entoure l'élément flottant<br> <br>
+          
+                               <input type="radio" name="réponse5" value="4">La notion de flottant n'existe pas 
+
+                       <hr>
+
+              
+
+                  <a href="#ShowScore"> <button type="button" class="button" onclick="check()"> Valider  </button></a>
+   
+                
+        </form>
+
+        
+                <!--************************ Fin quizz ************************ -->
+                  
+                                 
+               
+     
+
+                            <br></br>
+
+                            <h2 style="color: red"> <strong> * * * * * * * * * * * * * * * * * * FIN * * * * * * * * * * * * * * * * * * </strong>  </h2>
+                         
+                        
+                            <br></br> <br></br> <br></br>
+                        
+                    </article>
+
+                 <aside>
+
+                        <ul>
+                         
+                                <li> <a href="debutant.html" >Niveau Débutant</a> </li>
+                                          
+                                <li> <a href="#" onclick="checkLevel()" id="checkLevel" class="active"> Niveau Avancé </a> </li>                        
+         
+                        </ul>
+
+                 </aside>
+                
+         </section>
+
+
+    </div>
+          
+</body>
+
+
+ <script src="js/avance.js"></script>
+
+
+</html>
